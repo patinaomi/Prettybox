@@ -1,5 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Syne:wght@400;500;600;700;800&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #C4F125; 
+    --cor-secundaria: #FFA2FD;
+    --cor-terciaria: #03484F;
+    --cor-de-fundo: #FFFEEC;
+
+    --fonte-principal: 'Syne', sans-serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+
+}
+
+.cabecalho {
+    margin: 1%;
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+.cabecalho-logo {
+    height: 24px;
+}
+
+.cabecalho-img-carrinho {
+    float: right;
+}
+.cabecalho-menu {
+    gap: 10em;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.cabecalho-menu-link {
+    font-weight: 700;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-family: var(--fonte-texto);
+    font-size: 18px;
+}
+
+.cabecalho-menu-link:hover {
+    color: var(--cor-de-fundo);
+    transition: 0.3s;
+
+}
+
+
+.titulo {
+    font-weight: 800;
+    font-family: 'Syne', sans-serif;
+
+}
+
+p {
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.rodape {
+    background-color: #e4e2e4;
+    padding: 44px;
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-size: 12px;
 }
