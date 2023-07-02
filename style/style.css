@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Syne:wght@400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@
     --cor-secundaria: #FFA2FD;
     --cor-terciaria: #03484F;
     --cor-de-fundo: #FFFEEC;
+    --cor-do-texto: #000000;
 
     --fonte-principal: 'Syne', sans-serif;
     --fonte-texto: 'Montserrat', sans-serif;
@@ -17,7 +19,6 @@
 
 body {
     background-color: var(--cor-de-fundo);
-
 }
 
 .cabecalho {
@@ -29,14 +30,14 @@ body {
     padding: 0.1em 0;
 }
 
-.cabecalho-logo {
+.cabecalho__logo {
     height: 3em;
 }
 
-.cabecalho-img-carrinho {
+.cabecalho__img-carrinho {
     float: right;
 }
-.cabecalho-menu {
+.cabecalho__menu {
     gap: 10em;
     list-style: none;
     align-items: center;
@@ -44,7 +45,7 @@ body {
     display: flex;
 }
 
-.cabecalho-menu-link {
+.cabecalho__menu--link {
     font-weight: 700;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -52,7 +53,7 @@ body {
     font-size: 18px;
 }
 
-.cabecalho-menu-link:hover {
+.cabecalho__menu--link:hover {
     color: var(--cor-de-fundo);
     transition: 0.3s;
 
@@ -63,37 +64,67 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: #FFA2FD;
 }
 
 .container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
 
-
-.titulo {
-    font-weight: 800;
-    font-family: 'Syne', sans-serif;
-
-}
-
-p {
-    font-family: 'Syne', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-}
-
-.botao-cta {
+.container__botao-cta {
+    display: block;
     text-decoration: none;
     background-color: var(--cor-primaria);
     font-size: 24px;
     border-radius: 8px;
-    border-color:#000000 solid;
-    
+    border-color:var(--cor-do-texto);
+    border: 2px solid;
+    padding: 1em;
     font-family: var(--fonte-texto);
-    color: #000000;
-    
+    font-weight: 800;
+    color: var(--cor-do-texto);
 }
+
+.container__botao-secundario {
+    display: block;
+    text-decoration: none;
+    font-size: 21px;
+    border-radius: 8px;
+    border-color: var(--cor-do-texto);
+    border: 2px solid;
+    padding: 1em;
+    color: var(--cor-do-texto);
+    font-family: var(--fonte-texto);
+    font-weight: 700;
+
+}
+
+.container__aviso {
+    font-size: 14px;
+    font-family: var(--fonte-texto);
+}
+
+.container__titulo {
+    font-weight: 800;
+    font-family: var(--fonte-principal);
+}
+
+.container__imagem-logo {
+    margin: 1em 0 2em 0;
+    height: 14em;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+p {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 21px;
+}
+
 
 .rodape {
     background-color: #e4e2e4;
