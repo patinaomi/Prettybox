@@ -28,11 +28,11 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 1em 0;
+    padding: 0.1em 0;
 }
 
 .cabecalho-logo {
-    height: 24px;
+    height: 3em;
 }
 
 .cabecalho-img-carrinho {
