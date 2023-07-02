@@ -27,11 +27,11 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 0.1em 0;
+    padding: 0.3em 0;
 }
 
-.cabecalho__logo {
-    height: 3em;
+.cabecalho__imagem-logo {
+    height: 2em;
 }
 
 .cabecalho__img-carrinho {
@@ -45,7 +45,7 @@ body {
     display: flex;
 }
 
-.cabecalho__menu--link {
+.cabecalho__menu-link {
     font-weight: 700;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -53,23 +53,27 @@ body {
     font-size: 18px;
 }
 
-.cabecalho__menu--link:hover {
+.cabecalho__menu-link:hover {
     color: var(--cor-de-fundo);
     transition: 0.3s;
 
 }
 
-.principal {
+/* .principal {
     background-image: url("../assets/images/banner-principal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
 .container {
     height: 100vh;
     display: grid;
     grid-template-columns: 40% 60%;
+    background-image: url("../assets/images/banner-principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .container__botao-cta {
@@ -107,16 +111,17 @@ body {
 
 .container__titulo {
     font-weight: 800;
+    font-size: 30px;
     font-family: var(--fonte-principal);
+    
 }
 
 .container__imagem-logo {
-    margin: 1em 0 2em 0;
-    height: 14em;
+    height: 15%;
 }
 
 .container__caixa {
-    margin: 0 6em;
+    margin: 4em 6em;
 }
 
 p {
