@@ -21,9 +21,7 @@ body {
 }
 
 .cabecalho {
-    margin: 1%;
     background-color: var(--cor-secundaria);
-    border-radius: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -60,6 +58,18 @@ body {
 
 }
 
+.principal {
+    background-image: url("../assets/images/banner-principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #FFA2FD;
+}
+
+.container {
+    height: 100vh;
+}
+
 
 .titulo {
     font-weight: 800;
@@ -71,6 +81,18 @@ p {
     font-family: 'Syne', sans-serif;
     font-weight: 400;
     font-size: 24px;
+}
+
+.botao-cta {
+    text-decoration: none;
+    background-color: var(--cor-primaria);
+    font-size: 24px;
+    border-radius: 8px;
+    border-color:#000000 solid;
+    
+    font-family: var(--fonte-texto);
+    color: #000000;
+    
 }
 
 .rodape {
