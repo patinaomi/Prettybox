@@ -28,6 +28,8 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 0.3em 0;
+    border-color:var(--cor-do-texto);
+    border-bottom: 1px solid;
 }
 
 .cabecalho__imagem-logo {
@@ -50,7 +52,7 @@ body {
     color: var(--cor-terciaria);
     text-decoration: none;
     font-family: var(--fonte-texto);
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .cabecalho__menu-link:hover {
@@ -59,12 +61,6 @@ body {
 
 }
 
-/* .principal {
-    background-image: url("../assets/images/banner-principal.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-} */
 
 .container {
     height: 100vh;
@@ -74,17 +70,19 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    align-items:center;
 }
 
 .container__botao-cta {
     display: block;
+    text-align: center;
     text-decoration: none;
     background-color: var(--cor-primaria);
-    font-size: 24px;
+    font-size: 1.5em;
     border-radius: 8px;
     border-color:var(--cor-do-texto);
     border: 2px solid;
-    padding: 1em;
+    padding: 0.75em;
     font-family: var(--fonte-texto);
     font-weight: 800;
     color: var(--cor-do-texto);
@@ -92,49 +90,70 @@ body {
 
 .container__botao-secundario {
     display: block;
+    text-align: center;
     text-decoration: none;
-    font-size: 21px;
-    border-radius: 8px;
+    font-size: 1.125em;
+    border-radius: 0.5em;
     border-color: var(--cor-do-texto);
     border: 2px solid;
-    padding: 1em;
+    padding: 0.6em;
     color: var(--cor-do-texto);
     font-family: var(--fonte-texto);
     font-weight: 700;
-
 }
 
 .container__aviso {
-    font-size: 14px;
+    font-size: 0.875em;
+    margin-top: 1em;
     font-family: var(--fonte-texto);
 }
 
 .container__titulo {
     font-weight: 800;
-    font-size: 30px;
+    font-size: 2em;
     font-family: var(--fonte-principal);
+    margin: 1em 0;
     
 }
 
 .container__imagem-logo {
-    height: 15%;
+    height: 8.5em;
 }
 
 .container__caixa {
     margin: 4em 6em;
 }
 
-p {
+.container__subtitulo {
+    margin: 1em 0 1.5em 0;
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 21px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    align-items: center;
+}
+
+.container-secundario {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    /* background-image: url("../assets/images/banner-principal.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items:center;
+}
+
+.container-secundario__img2 {
+   width: 60%;
+   border: var(--cor-primaria) 16px solid;
 }
 
 
 .rodape {
     background-color: #e4e2e4;
-    padding: 44px;
+    padding: 2.75em;
     text-align: center;
     font-family: var(--fonte-texto);
-    font-size: 12px;
+    font-size: 0.75em;
 }
